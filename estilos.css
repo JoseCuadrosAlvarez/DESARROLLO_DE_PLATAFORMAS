@@ -1,0 +1,158 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000706; /* Fondo oscuro */
+  color: #bfac8b; /* Texto claro */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.cv-contenido {
+  width: 100vw; /* Ancho de la pantalla */
+  height: 100vh; /* Alto de la pantalla */
+}
+
+.header {
+  text-align: center;
+  background-color: #00272d; /* Cabezera más oscura */
+  padding: 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px; /* Ajuste para mantener la proporción */
+  border-radius: 50%; /* Redondez ajustada */
+  display: block;
+  margin: 20px auto; /* Centrado */
+}
+
+.contacto img {
+  width: 15px;
+  margin-right: 8px;
+}
+
+.mas-contenido,
+.izq-column,
+.der-column {
+  background-color: #0c7e7e; /* Fondo unificado para la columna */
+  padding: 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #c5c5c4d0; /* Subtítulos más claros */
+}
+
+h4 {
+  margin-bottom: -5px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h1, h2 {
+  color: rgb(197, 197, 196); /* Títulos más claros */
+}
+
+hr {
+  border-color: #c5c5c4; /* Línea horizontal más clara */
+  margin-top: -15px;
+}
+
+a {
+  color: #c5c5c4; /* Enlaces más claros */
+  text-decoration: none;
+}
+
+h1:hover, h2:hover {
+  color: #ffffff; /* Resaltado al pasar el ratón más claro */
+}
+
+h3:hover, a:hover, p:hover, li:hover {
+  color: rgb(255, 255, 255); /* Resaltado al pasar el ratón más claro */
+}
+
+/* Estilos base para los campos de entrada y botones */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
+input[list="aptitudes"],
+select,
+textarea,
+input[type="submit"] {
+  background-color: #134647; /* Fondo oscuro para los campos de entrada */
+  color: #c5c5c4; /* Texto claro */
+  border: 1px solid #00272d; /* Borde más claro */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espacio debajo de cada campo */
+  border-radius: 5px; /* Bordes redondeados */
+  width: calc(100% - 22px); /* Ancho ajustado */
+}
+
+/* Estilos para el hover de los campos de entrada y botones */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[list="aptitudes"]:hover,
+select:hover,
+textarea:hover,
+input[type="submit"]:hover {
+  background-color: #00272d; /* Fondo más claro al pasar el ratón */
+  border-color: #555; /* Borde más claro al pasar el ratón */
+}
+
+/* Estilos para el foco de los campos de entrada y botones */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+input[list="aptitudes"]:focus,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus {
+  background-color: #00272d; /* Fondo aún más claro al enfocar */
+  border-color: #666; /* Borde más claro al enfocar */
+  outline: none; /* Elimina el contorno predeterminado */
+}
+
+/* Estilos específicos para los botones */
+input[type="submit"] {
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Suaviza la transición del color de fondo */
+}
+
+/* Estilos específicos para los botones al pasar el ratón */
+input[type="submit"]:hover {
+  background-color: #00272d; /* Fondo más claro al pasar el ratón */
+}
+
+/* Estilos específicos para los botones al enfocar */
+input[type="submit"]:focus {
+  background-color: #00272d; /* Fondo aún más claro al enfocar */
+}
+
+/* Estilos para los círculos de las opciones de radio */
+input[type="radio"] {
+  vertical-align: bottom; /* Alinea los círculos con la parte inferior de las etiquetas */
+  margin-right: 100px; /* Espacio a la derecha del círculo */
+  margin-bottom: 1 px; /* Espacio hacia abajo del círculo */
+}
+
+/* Estilos para los cuadros de verificación de habilidades */
+input[type="checkbox"] {
+  vertical-align: bottom; /* Alinea los cuadros con la parte inferior de las etiquetas */
+  margin-right: 100px; /* Espacio a la derecha del cuadro */
+  margin-bottom: 1px; /* Espacio hacia abajo del cuadro */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Currículum</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="cv-contenido">
+
+    <div class="header">
+        <h1>Formulario de Currículum</h1>
+    </div>
+
+    <form action="formulario.php" method="post" class="curriculum">
+        <div class="mas-contenido">
+            <div class="izq-column">
+                <section>
+                    <label for="nombre">Nombre y Apellidos:</label>
+                    <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+                </section>
+                <section>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </section>
+                <section>
+                    <label for="ocupacion">Ocupación:</label>
+                    <input type="text" id="ocupacion" name="ocupacion" required>
+                </section>
+                <section>
+                    <label for="contacto">Contacto (teléfono, email):</label>
+                    <input type="text" id="contacto" name="contacto" required>
+                </section>
+                <section>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <select id="nacionalidad" name="nacionalidad" required>
+                        <option value="peruana">Peruana</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </section>
+                <section>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </section>
+                <section>
+                    <label for="linkedin">Linkedin:</label>
+                    <input type="text" id="linkedin" name="linkedin" required>
+                </section>
+                <section>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </section>
+                <section>
+                    <label>Nivel de inglés:</label><br>
+                    <input type="radio" id="basico" name="nivel_ingles" value="basico" required>
+                    <label for="basico">Básico</label><br>
+                    <input type="radio" id="intermedio" name="nivel_ingles" value="intermedio">
+                    <label for="intermedio">Intermedio</label><br>
+                    <input type="radio" id="avanzado" name="nivel_ingles" value="avanzado">
+                    <label for="avanzado">Avanzado</label><br>
+                    <input type="radio" id="fluido" name="nivel_ingles" value="fluido">
+                    <label for="fluido">Fluido</label>
+                </section>
+                <section>
+                    <label for="lenguajes_de_programacion">Lenguajes de programación:</label>
+                    <select id="lenguajes_de_programacion" name="lenguajes_de_programacion[]" multiple required>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                        <!-- Otros lenguajes -->
+                    </select>
+                </section>
+                <section>
+                    <label for="aptitudes">Aptitudes:</label>
+                    <input list="aptitudes" id="aptitudes" name="aptitudes" required>
+                    
+                </section>
+                <section>
+                    <label for="habilidades">Habilidades:</label><br>
+                    <input type="checkbox" id="creatividad" name="habilidades[]" value="creatividad">
+                    <label for="creatividad">Creatividad</label><br>
+                    <input type="checkbox" id="adaptabilidad" name="habilidades[]" value="adaptabilidad">
+                    <label for="adaptabilidad">Adaptabilidad</label><br>
+                    <input type="checkbox" id="colaboracion" name="habilidades[]" value="colaboracion">
+                    <label for="colaboracion">Colaboración</label><br>
+                    <!-- Otras habilidades -->
+                </section>
+                <section>
+                    <label for="perfil">Perfil:</label><br>
+                    <textarea id="perfil" name="perfil" rows="4" cols="50" required></textarea>
+                </section>
+                <section>
+                    <label for="experiencia_laboral">Experiencia laboral:</label><br>
+                    <textarea id="experiencia_laboral" name="experiencia_laboral" rows="4" cols="50" required></textarea>
+                </section>
+                <section>
+                    <label for="formacion_secundaria">Nombre de la educación secundaria:</label>
+                    <input type="text" id="formacion_secundaria" name="formacion_secundaria" required>
+                </section>
+                <section>
+                    <label for="formacion_superior">Formación superior (universidad, instituto, etc.):</label>
+                    <input type="text" id="formacion_superior" name="formacion_superior" required>
+                </section>
+            </div>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>

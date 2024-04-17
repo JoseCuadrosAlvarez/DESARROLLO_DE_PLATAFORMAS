@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #e9e9e9;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-contenido {
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex; /* Flexbox para distribuir el contenido */
+  flex-direction: column; /* Dirección de columna */
+}
+
+.header {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 125px;
+  margin-left: 50px;
+  border-radius: 700%;
+}
+
+.contacto img {
+  width: 15px;
+  margin-right: 8px;
+}
+
+.mas-contenido {
+  display: flex;
+  flex: 1; /* El contenido se expandirá para ocupar todo el espacio disponible */
+}
+
+.izq-column {
+  width: 230px;
+  background-color: #006666;
+  padding: 20px;
+}
+
+.der-column {
+  flex: 1; /* La columna derecha tomará todo el espacio disponible */
+  background-color: #008584;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #f5f5f5;
+}
+
+h4 {
+  margin-bottom: -5px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h1,
+h2 {
+  color: rgb(197, 197, 196);
+}
+
+hr {
+  border-color: #000000;
+  margin-top: -15px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1:hover,
+h2:hover {
+  color: #000000;
+}
+
+h3:hover,
+a:hover,
+p:hover,
+li:hover {
+  color: rgb(213, 213, 213);
+}
