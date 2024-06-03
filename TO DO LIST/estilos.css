@@ -1,0 +1,82 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: #621832;
+    text-align: center;
+    color: #ebecee;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #b63862, #1e3860);
+}
+
+ol {
+    list-style-position: inside;
+    background-color: #7c0e34;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#task-input::placeholder {
+    color: #adbad8;
+}
+
+#task-input {
+    background-color: #b15374;
+    color: #680025;
+    padding: 8px;
+    border: 1px solid #a32a53;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+#task-input:focus {
+    border-color: #80b3ff;
+    outline: none;
+}
+
+button, input[type="submit"] {
+    background-color: #8f1c44;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #7c0e34;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    border: none;
+    background-color: transparent;
+    color: #ff6347;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.delete-button:hover {
+    color: #ff4500;
+}
+
+input[type="submit"] {
+    padding: 8px 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #7c0e34;
+}
+
